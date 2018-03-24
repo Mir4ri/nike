@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Nike</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>	
+
+</head>
+<body>
+	<header class="header">
+		<div class="container container--flex">
+			<div class="logo">
+				<img class="logo__img" src="img/logo_nike.svg" alt="">
+			</div>
+			<ul class="main-menu">
+				<li class="main-menu__item"><a	class="main-menu__link" href="">Freestyle</a></li>
+				<li class="main-menu__item"><a	class="main-menu__link  main-menu__link--active" href="">Running</a></li>
+				<li class="main-menu__item"><a	class="main-menu__link" href="">Football</a></li>
+				<li class="main-menu__item"><a	class="main-menu__link" href="">Skateboarding</a></li>
+			</ul>
+		
+			<button class="burger">
+				<span class="burger__line"></span>
+			</button>	
+		</div>
+	</header>
+	<main class="main">
+		<div class="popup__third"></div>
+		<div class="popup__second"></div>
+		<div class="popup" itemscope itemtype="http://schema.org/Product">
+			<div class="popup-img">
+				<div data-model="huarache" class="popup-img__single">
+					<img src="img/img_h.png" class="popup-img__single-img" alt="">	
+				</div>
+				<button class="plus-button"></button>
+				<div class="popup-img__thumbs">
+					<img src="img/1.png" alt="" class="popup-img__thumbs-single">
+					<img src="img/3.png" alt="" class="popup-img__thumbs-single">
+					<img src="img/2.png" alt="" class="popup-img__thumbs-single">
+				</div>
+			</div>
+			<div class="popup-info">
+				<button class="popup-close"></button>
+				<span class="badge-new">New</span>
+				<h1 class="popup-info__title">THE <span class="h-color-blue">RUNNING</span> HAS JUST BEGUN</h1>
+				<h2 class="popup-info__model" itemprop="name">Huarache</h2>
+				<div class="popup-info__rating" itempop="aggregateRating">
+					<span class="popup-info_rating__item"><i class="fas fa-star"></i></span>
+					<span class="popup-info_rating__item"><i class="fas fa-star"></i></span>
+					<span class="popup-info_rating__item"><i class="fas fa-star"></i></span>
+					<span class="popup-info_rating__item"><i class="fas fa-star"></i></span>
+					<span class="popup-info_rating__item"><i class="fas fa-star"></i></span>
+					<span class="popup-info_rating__count"></span>
+					<span class="popup-info_rating__item"></span>
+				</div>
+				<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<div class="popup-info__currency" itemprop="priceCurrency" content="USD">$</div>
+					<div class="popup-info__price" itempop="price" content="200">200</div>
+				</div>
+				
+				<div class="popup-info__size">
+					<span class="popup-info__size__title">Size</span>
+				<ul class="popup-info__size__table">
+					<li class="popup-info__size__item">7</li>
+					<li class="popup-info__size__item">8</li>
+					<li class="popup-info__size__item">9</li>
+					<li class="popup-info__size__item popup-info__size__item--border">10</li>
+					<li class="popup-info__size__item">11</li>
+				</ul>
+				<button class="popup__add-to-cart">add to cart</button>
+				<button class="popup__wishlist">wishlist</button>
+				</div>
+			</div>
+		</div>
+		
+		
+	</main>
+</body>
+</html>	
